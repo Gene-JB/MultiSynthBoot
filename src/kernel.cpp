@@ -44,7 +44,7 @@ bool CKernel::Initialize()
 		return FALSE;
 	    }
 
-        m_pScreen = new CScreenDevice(m_Options.GetWidth(), m_Options.GetHeight());
+        m_pScreen = new CScreenDevice(1920, 1080);
         if (!m_pScreen->Initialize()) {
             LOGERR("HDMI init failed!");
             return false;
